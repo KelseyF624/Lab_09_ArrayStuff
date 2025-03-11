@@ -10,11 +10,11 @@ public class ArrayStuff {
 
         //task 2
 
-        Random rand = new Random();
-        for (int i = 0; i < dataPoints.length; i++) {
-            dataPoints[i] = rand.nextInt(100)+1;}
-        for (int i = 0; i < dataPoints.length; i++) {
-            System.out.print (dataPoints[i] + "  ");}
+       Random rand = new Random();
+        //for (int i = 0; i < dataPoints.length; i++) {
+           // dataPoints[i] = rand.nextInt(100)+1;}
+       // for (int i = 0; i < dataPoints.length; i++) {
+           // System.out.print (dataPoints[i] + "  ");}
 
         //task 3
 
@@ -26,12 +26,12 @@ public class ArrayStuff {
         //task 4
 
         int sum = 0;
-        for (int i = 0; i < dataPoints.length; i++) {
-            sum = sum + dataPoints[i];
-            System.out.print ("The sum of the data points is:" + sum);
+        for(int i = 0; i < dataPoints.length; i++) {
+            sum += dataPoints[i];
         }
-        int ave = sum / dataPoints.length;
-        System.out.println("\nThe average of the data points is:" + ave);
+        int average = sum / dataPoints.length;
+        System.out.println("\nThe sum of the data points is: " + sum);
+        System.out.println("The average of the data points is: " + average);
 
         //task 5
 
