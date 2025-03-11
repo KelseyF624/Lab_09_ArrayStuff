@@ -20,14 +20,15 @@ public class ArrayStuff {
 
         for (int i = 0; i < dataPoints.length; i++) {
             dataPoints[i] = rand.nextInt(100)+1;}
-        for (int i = 0; i < dataPoints.length; i++) {
-            System.out.print (dataPoints[i] + " | ");}
+        for (int dataPoint : dataPoints) {
+            System.out.print(dataPoint + " | ");
+        }
 
         //task 4
 
         int sum = 0;
-        for(int i = 0; i < dataPoints.length; i++) {
-            sum += dataPoints[i];
+        for (int dataPoint : dataPoints) {
+            sum += dataPoint;
         }
         int average = sum / dataPoints.length;
         System.out.println("\nThe sum of the data points is: " + sum);
@@ -36,14 +37,25 @@ public class ArrayStuff {
         //task 5
 
         Scanner input = new Scanner(System.in);
-        int intValue =SafeInput.getRangedInt(input, "Please enter a value between 1 and 100.", 1, 100);
+        int intValue = SafeInput.getRangedInt(input, "Please enter a value between 1 and 100.", 1, 100);
 
         //task 6
 
-
+        for (int i = 0; i < dataPoints.length; i++) {
+            if (dataPoints[i] == intValue) {
+                System.out.print ("Found " + intValue + " at index " + i + "\n");}
+            else {
+                System.out.println ("Target " + intValue + " not found.");}
+        }
 
         //task 7
-
+    for (int i = 0; i < dataPoints.length; i++) {
+        if (dataPoints[i] == intValue) {
+            System.out.print ("Breaking! Found " + intValue + " at index " + i + "\n");
+        break; }
+        else {
+            System.out.println ("Target " + intValue + " not found.");}
+    }
 
 
         //task 8
