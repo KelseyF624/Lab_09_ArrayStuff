@@ -41,30 +41,23 @@ public class ArrayStuff {
 
         //task 6
 
-        for (int i = 0; i < dataPoints.length; i++) {
-            if (dataPoints[i] == intValue) {
-                System.out.print ("Found " + intValue + " at index " + i + "\n");}
-            else {
-                System.out.println ("Target " + intValue + " not found.");}
-        }
+
 
         //task 7
-    for (int i = 0; i < dataPoints.length; i++) {
-        if (dataPoints[i] == intValue) {
-            System.out.print ("Breaking! Found " + intValue + " at index " + i + "\n");
-        break; }
-        else {
-            System.out.println ("Target " + intValue + " not found.");}
-    }
+
 
 
         //task 8
 
+        int min = dataPoints[0];
+        int max = dataPoints[0];
 
+        for (int i = 0; i < dataPoints.length; i++) {
+            if (dataPoints[i] < min) {
+                min = dataPoints[i];}
+            if (dataPoints[i] > max) {
+                max = dataPoints[i];} }
+        System.out.println ("The minimum value is: " + min);
+        System.out.println ("The maximum value is: " + max);
 
         //task 9
-
-
-
-    }
-}
