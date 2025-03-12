@@ -88,17 +88,17 @@ public class ArrayStuff {
 
         //task 9
 
-        public static double getAverage ( int values[])
+        public static double getAverage(int values[]) {
         int retAverage;
-        {
-            int retSum = 0;
+            sum = 0;
             retAverage = 0;
             for (int i = 0; i < values.length; i++) {
-                retSum += values[i];
-                retAverage = retSum / values.length;
+                sum += values[i];
+                retAverage = sum / values.length;
             }
             System.out.println("Average of dataPoints is: " + getAverage);
+            return retAverage;
         }
-        return retAverage;
+
     }
 }
