@@ -88,7 +88,7 @@ public class ArrayStuff {
 
         //task 9
 
-        public static double getAverage(int values[]) {
+        public static double getAverage(int values[]){
         int retAverage;
             sum = 0;
             retAverage = 0;
