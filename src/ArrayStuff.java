@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 public class ArrayStuff {
 
-    public static double getAverage(int values[]){
+    public static void main(String[] args) {
+
 
         //task 1
 
@@ -86,18 +87,17 @@ public class ArrayStuff {
         System.out.println("The minimum value is: " + min);
         System.out.println("The maximum value is: " + max);
 
-        //task 9
+        System.out.println("Average of dataPoints is: " + getAverage(dataPoints));
+    }
 
-        int retAverage;
-            sum = 0;
-            retAverage = 0;
-            for (int i = 0; i < values.length; i++) {
-                sum += values[i];
-                retAverage = sum / values.length;
-            }
-            System.out.println("Average of dataPoints is: " + retAverage);
-            return retAverage;
+        //task 9
+        public static double getAverage(int values[]){
+        int sum = 0;
+        int[] dataPoints = new int[100];
+        for (int i = 0; i < values.length; i++) {
+            sum += values[i];
+        }
+            return (double) sum/values.length;
         }
 
     }
-}
